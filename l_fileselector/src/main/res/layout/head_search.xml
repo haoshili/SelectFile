@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48dp"
+    android:background="#0d91a0"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dip"
+        android:background="#0d91a0"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#0d91a0" >
+
+        <RelativeLayout
+            android:id="@+id/re_menu_home"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/re_click_g"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/iv_head0"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_arrow_back_white_36dp" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:textSize="14dip"
+            android:textColorHint="@color/text_gray"
+            android:textColor="@color/text_color"
+            android:paddingLeft="14dip"
+            android:background="@drawable/btn_search"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="22dip"
+            android:layout_toRightOf="@id/re_menu_home"
+            android:hint="@string/search" />
+    </RelativeLayout>
+
+</LinearLayout>

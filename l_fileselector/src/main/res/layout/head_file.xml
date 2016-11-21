@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48dp"
+    android:background="#0d91a0"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dip"
+        android:visibility="gone"
+        android:background="#0d91a0" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#0d91a0" >
+
+        <RelativeLayout
+            android:id="@+id/re_menu_home"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/re_click_g"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/iv_head0"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_arrow_back_white_36dp" />
+        </RelativeLayout>
+
+        <!-- 菜单 -->
+
+        <RelativeLayout
+            android:id="@+id/re_filter"
+            android:layout_width="48dp"
+          	android:onClick="open"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/re_click_g"
+            android:clickable="true" >
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_hourglass_empty_white_36dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_order"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_toLeftOf="@id/re_filter"
+            android:background="@drawable/re_click_g"
+            android:clickable="true" >
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_details_white_36dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

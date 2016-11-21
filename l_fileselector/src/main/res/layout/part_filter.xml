@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="220dp"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/re_home"
+        android:layout_width="220dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dip"
+           android:onClick="search"
+        android:background="@drawable/listview_click_whilte"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+         
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/ic_search_black_36dp" />
+
+        <TextView
+            android:id="@+id/tv_home"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="70dp"
+            android:text="@string/search"
+            android:textColor="@color/text_color"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:onClick="showLatest"
+        android:layout_width="220dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/listview_click_whilte"
+        android:clickable="true" >
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/ic_query_builder_black_36dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="70dp"
+            android:text="@string/latest"
+            android:textColor="@color/text_color"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <!-- 过滤office文档 -->
+
+    <RelativeLayout
+        android:layout_width="220dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/listview_click_whilte"
+        android:clickable="true"
+        android:onClick="filterOffice" >
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/ic_filter_4_black_36dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="70dp"
+            android:text="@string/office"
+            android:textColor="@color/text_color"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <!-- 过滤paf文档 -->
+
+    <RelativeLayout
+        android:layout_width="220dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/listview_click_whilte"
+        android:clickable="true"
+        android:onClick="filterPDF" >
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/ic_picture_as_pdf_black_36dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="70dp"
+            android:text="@string/pdf"
+            android:textColor="@color/text_color"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <!-- 过滤txt文档 -->
+
+    <RelativeLayout
+        android:layout_width="220dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/listview_click_whilte"
+        android:clickable="true"
+        android:onClick="filterTxt" >
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/ic_voicemail_black_36dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="70dp"
+            android:text="@string/other"
+            android:textColor="@color/text_color"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="220dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/listview_click_whilte"
+        android:clickable="true"
+        android:onClick="filterMap" >
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/ic_map_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="70dp"
+            android:text="@string/look"
+            android:textColor="@color/text_color"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="220dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/listview_click_whilte"
+        android:clickable="true" >
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/ic_assignment_turned_in_black_36dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="70dp"
+            android:text="@string/select"
+            android:textColor="@color/text_color"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>
