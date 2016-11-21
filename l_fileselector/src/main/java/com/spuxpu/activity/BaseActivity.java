@@ -6,6 +6,7 @@ import android.view.Window;
 
 public class BaseActivity extends FragmentActivity {
 
+    //添加测试
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
